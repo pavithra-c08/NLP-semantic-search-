@@ -1,0 +1,46 @@
+# ================================================================
+# Document Similarity Search — Python 3.14 verified dependencies
+#
+# INSTALL ORDER (run these two commands in sequence):
+#
+#   1. Install PyTorch first (not on PyPI, needs its own index):
+#      pip install torch==2.9.0 --index-url https://download.pytorch.org/whl/cpu
+#
+#   2. Install everything else:
+#      pip install --only-binary :all: -r requirements.txt
+#
+# All versions below are confirmed to have pre-built cp314 wheels
+# for Windows x64. No C compiler or Visual Studio required.
+# ================================================================
+
+# Core Framework
+streamlit==1.41.1
+
+# Document Processing
+PyMuPDF==1.25.5
+python-docx==1.1.0
+openpyxl==3.1.2
+
+# Data / ML
+numpy==2.4.3
+pandas==2.3.3
+sentence-transformers==3.3.1
+scikit-learn==1.7.2
+transformers==4.47.1
+# torch==2.9.0  <-- installed via step 1 above (pytorch.org index)
+
+# Visualization
+plotly==5.22.0
+matplotlib==3.10.7
+
+# PDF Generation
+fpdf2==2.7.9
+
+# Utilities
+python-dateutil==2.9.0
+tqdm==4.66.4
+nltk==3.8.1
+
+# Testing
+pytest==8.2.2
+pytest-cov==5.0.0

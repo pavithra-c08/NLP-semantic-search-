@@ -1,0 +1,432 @@
+/* 
+Custom Styles for Plagiarism Checker
+Version: 2.0.0
+*/
+
+/* Main Container */
+.main {
+    padding: 2rem;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* Headers */
+h1 {
+    color: #1f2937;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    color: #374151;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #3b82f6;
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    color: #4b5563;
+    font-weight: 600;
+    margin-top: 1.5rem;
+}
+
+/* Cards and Containers */
+.stMetric {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stMetric:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Buttons */
+.stButton > button {
+    width: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(102, 126, 234, 0.4);
+}
+
+.stButton > button:hover {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(102, 126, 234, 0.6);
+}
+
+.stButton > button:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* File Uploader */
+.uploadedFile {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 2px dashed #3b82f6;
+    margin: 0.5rem 0;
+}
+
+/* Progress Bar */
+.stProgress > div > div {
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+}
+
+/* Success/Warning/Error Messages */
+.stSuccess {
+    background: #d1fae5;
+    color: #065f46;
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #10b981;
+    margin: 1rem 0;
+}
+
+.stWarning {
+    background: #fef3c7;
+    color: #92400e;
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #f59e0b;
+    margin: 1rem 0;
+}
+
+.stError {
+    background: #fee2e2;
+    color: #991b1b;
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #ef4444;
+    margin: 1rem 0;
+}
+
+.stInfo {
+    background: #dbeafe;
+    color: #1e40af;
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #3b82f6;
+    margin: 1rem 0;
+}
+
+/* Sidebar */
+.css-1d391kg {
+    background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.sidebar .sidebar-content {
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0.5rem 0;
+}
+
+/* Expander */
+.streamlit-expanderHeader {
+    background: #f3f4f6;
+    border-radius: 8px;
+    padding: 0.75rem;
+    font-weight: 600;
+    color: #1f2937;
+    transition: background 0.3s ease;
+}
+
+.streamlit-expanderHeader:hover {
+    background: #e5e7eb;
+}
+
+/* Divider */
+hr {
+    margin: 2rem 0;
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #3b82f6, transparent);
+}
+
+/* Code Blocks */
+.stCodeBlock {
+    background: #1f2937;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+/* Dataframe */
+.stDataFrame {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabs */
+.stTabs [data-baseweb="tab-list"] {
+    background: white;
+    border-radius: 10px;
+    padding: 0.5rem;
+    gap: 0.5rem;
+}
+
+.stTabs [data-baseweb="tab"] {
+    background: #f3f4f6;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.stTabs [aria-selected="true"] {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+/* Charts */
+.js-plotly-plot {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: white;
+    padding: 1rem;
+}
+
+/* Spinner */
+.stSpinner > div {
+    border-color: #667eea;
+    border-top-color: transparent;
+}
+
+/* Download Button */
+.stDownloadButton > button {
+    background: #10b981;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.stDownloadButton > button:hover {
+    background: #059669;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(16, 185, 129, 0.4);
+}
+
+/* Slider */
+.stSlider > div > div > div {
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Select Box */
+.stSelectbox > div > div {
+    border-radius: 8px;
+    border: 2px solid #e5e7eb;
+    transition: border-color 0.3s ease;
+}
+
+.stSelectbox > div > div:focus-within {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Text Input */
+.stTextInput > div > div {
+    border-radius: 8px;
+    border: 2px solid #e5e7eb;
+    transition: border-color 0.3s ease;
+}
+
+.stTextInput > div > div:focus-within {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Checkbox */
+.stCheckbox {
+    padding: 0.5rem;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+.stCheckbox:hover {
+    background: #f3f4f6;
+}
+
+/* Radio */
+.stRadio > div {
+    gap: 0.75rem;
+}
+
+.stRadio > div > label {
+    background: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    border: 2px solid #e5e7eb;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.stRadio > div > label:hover {
+    border-color: #667eea;
+    background: #f3f4f6;
+}
+
+/* Number Input */
+.stNumberInput > div > div {
+    border-radius: 8px;
+    border: 2px solid #e5e7eb;
+}
+
+/* Caption Text */
+.stCaption {
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+/* Custom Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.main > div {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main {
+        padding: 1rem;
+    }
+    
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .stMetric {
+        padding: 1rem;
+    }
+    
+    .stButton > button {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .main {
+        background: white;
+    }
+    
+    .stButton, .stFileUploader, .sidebar {
+        display: none;
+    }
+}
+
+/* Dark Mode Support (if enabled in Streamlit) */
+@media (prefers-color-scheme: dark) {
+    .main {
+        background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+    }
+    
+    h1, h2, h3 {
+        color: #f3f4f6;
+    }
+    
+    .stMetric {
+        background: #374151;
+        color: #f3f4f6;
+    }
+}
+
+/* Custom Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+
+.p-1 { padding: 0.5rem; }
+.p-2 { padding: 1rem; }
+.p-3 { padding: 1.5rem; }
+.p-4 { padding: 2rem; }
+
+/* Gradient Text */
+.gradient-text {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+/* Pulse Animation for Important Elements */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+}
+
+.pulse {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+/* Tooltip Styling */
+.stTooltipIcon {
+    color: #667eea;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+footer a {
+    color: #667eea;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #764ba2;
+    text-decoration: underline;
+}
